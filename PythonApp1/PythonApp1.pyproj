@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>62bc44d2-0c88-4caf-a3b9-153d84be4713</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>module1.py</StartupFile>
+    <StartupFile>www\app.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,10 +21,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="module1.py">
+    <Folder Include="www\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="www\app.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="PythonApp1.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
